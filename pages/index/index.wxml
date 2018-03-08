@@ -1,5 +1,5 @@
 <!--index.wxml-->
 <view>
-   <calender id="calender"></calender>
+   <calender id="calender" bindadd="add" bindreduce="reduce"></calender>
 </view>
 

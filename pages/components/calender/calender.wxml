@@ -1,5 +1,14 @@
 <!--pages/components/calender.wxml-->
 <view class='calender'>
+   
+   <view class='operate'>
+      <text catchtap='_reduce'>减少</text>
+      <text catchtap="_add">增加</text>
+   </view>
+   <view class='year'>
+      <text>{{year}}年</text>
+      <text>{{currentMonth}}月</text>
+   </view>
    <view class='week'>
       <block wx:for="{{weekArr}}" wx:key="{{index}}">
          <text>{{item}}</text>
@@ -7,7 +16,7 @@
    </view>
    <view class='date'>
       <block wx:for="{{dateArr}}" wx:key="{{index}}">
-         <text>{{item}}</text>
+         <text>{{item-(weekNum-1)>0?item-(weekNum-1):""}}</text>
       </block>
    </view>
 </view>
