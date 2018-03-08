@@ -1,0 +1,8 @@
+<!--pages/components/calender.wxml-->
+<view>
+   <view class='week'>
+      <block wx:for="{{weekArr}}">
+         <text>{{item}}</text>
+      </block>
+   </view>
+</view>
