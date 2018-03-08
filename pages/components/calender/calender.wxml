@@ -16,7 +16,7 @@
    </view>
    <view class='date'>
       <block wx:for="{{dateArr}}" wx:key="{{index}}">
-         <text>{{item-(weekNum-1)<0?"":item-(weekNum-1)>31?"":item-(weekNum-1)}}</text>
+         <text>{{item-(weekNum-1)<0?"":item-(weekNum-1)>yearMonth[currentMonth-1]?"":item-(weekNum-1)}}</text>
       </block>
    </view>
 </view>
