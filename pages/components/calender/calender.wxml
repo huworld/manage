@@ -1,7 +1,12 @@
 <!--pages/components/calender.wxml-->
-<view>
+<view class='calender'>
    <view class='week'>
-      <block wx:for="{{weekArr}}">
+      <block wx:for="{{weekArr}}" wx:key="{{index}}">
+         <text>{{item}}</text>
+      </block>
+   </view>
+   <view class='date'>
+      <block wx:for="{{dateArr}}" wx:key="{{index}}">
          <text>{{item}}</text>
       </block>
    </view>

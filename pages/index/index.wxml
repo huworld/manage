@@ -1,4 +1,5 @@
 <!--index.wxml-->
-<view class="container">
-   hah
+<view>
+   <calender id="calender"></calender>
 </view>
+
