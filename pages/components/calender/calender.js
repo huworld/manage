@@ -97,7 +97,7 @@ Component({
          let weekStr = ""
          this.setData({
             weekNum: new Date(currentMonthDay).getDay(),
-            rowNum: Math.ceil((this.data.yearMonth[this.data.currentMonth] + new Date(currentMonthDay).getDay()) / 7)
+            rowNum: Math.ceil((this.data.yearMonth[this.data.currentMonth-1] + new Date(currentMonthDay).getDay()) / 7)
          })
          for (let i = 0; i < this.data.rowNum; i++) {
             for (let j = 0; j < 7; j++) {
