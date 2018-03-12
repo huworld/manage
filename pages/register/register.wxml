@@ -1,0 +1,2 @@
+<!--pages/register/register.wxml-->
+<view bindtap='registerTo'>登录</view>

@@ -1,0 +1,10 @@
+/* pages/register/register.wxss */
+view{
+   text-align: center;
+   width:60%;
+   margin-left:20%;
+   margin-top:40%;
+   height:40px;
+   background: #ccc;
+   line-height: 40px;
+}

@@ -1,5 +1,6 @@
 {
    "pages": [
+      "pages/register/register",
       "pages/index/index",
       "pages/components/calender/calender",
       "pages/checkOrder/checkIndex/checkIndex",
@@ -10,7 +11,39 @@
    "window": {
       "backgroundTextStyle": "light",
       "navigationBarBackgroundColor": "#fff",
-      "navigationBarTitleText": "WeChat",
+      "navigationBarTitleText": "门店大师",
       "navigationBarTextStyle": "black"
+   },
+   "tabBar": {
+      "color": "#a6a9b4",
+      "selectedColor": "#FF4F78",
+      "borderStyle": "",
+      "backgroundColor": "#fff",
+      "list": [
+         {
+            "text": "核销收银",
+            "iconPath":"",
+            "selectedPath":"",
+            "pagePath": "pages/checkOrder/checkIndex/checkIndex"
+         },
+         {
+            "text": "顾客管理",
+            "iconPath": "",
+            "selectedPath": "",
+            "pagePath": "pages/customerManage/customerIndex/customerIndex"
+         },
+         {
+            "text": "收入统计",
+            "iconPath": "",
+            "selectedPath": "",
+            "pagePath": "pages/inCome/inComeIndex/inComeIndex"
+         },
+         {
+            "text": "我的",
+            "iconPath": "",
+            "selectedPath": "",
+            "pagePath": "pages/mineAbout/mineAboutIndex/mineAboutIndex"
+         }
+      ]
    }
 }
