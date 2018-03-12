@@ -9,11 +9,9 @@ Page({
      this.calender = this.selectComponent("#calender")
   },
   add:function(e){
-      console.log("c")
       this.calender.add()
   },
   reduce:function(e){
-      console.log("d")
       this.calender.reduce()
   }
 })
