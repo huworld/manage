@@ -1,7 +1,11 @@
 {
    "pages": [
       "pages/index/index",
-      "pages/components/calender/calender"
+      "pages/components/calender/calender",
+      "pages/checkOrder/checkIndex/checkIndex",
+      "pages/customerManage/customerIndex/customerIndex",
+      "pages/inCome/inComeIndex/inComeIndex",
+      "pages/mineAbout/mineAboutIndex/mineAboutIndex"
    ],
    "window": {
       "backgroundTextStyle": "light",
