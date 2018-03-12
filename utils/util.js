@@ -1,3 +1,4 @@
+//request请求函数
 function request(url, json, callback) {
    wx.request({
       url: "https://www.fatime.cn" + url,
@@ -11,6 +12,8 @@ function request(url, json, callback) {
       }
    })
 }
+
+//函数暴露
 module.exports = {
    request: request
 }

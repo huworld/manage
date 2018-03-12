@@ -1,3 +1,4 @@
 <!--pages/register/register.wxml-->
 <view bindtap='registerTo'>登录</view>
 <button plain="true">登录</button>
+<button plain="true" bindtap='timerTo'>{{countType==1?"点击获取验证码":countDown+"s后重新获取"}}</button>
