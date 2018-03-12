@@ -3,9 +3,9 @@ Page({
    data:{
 
    },
-  registerTo:function(){
+   registerTo:function(){
       wx.switchTab({
          url: './../checkOrder/checkIndex/checkIndex',
       })
-  }
+   }
 })

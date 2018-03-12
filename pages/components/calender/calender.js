@@ -58,15 +58,11 @@ Component({
             })
          }
          let currentMonthDay = this.data.year + "-" + this.data.currentMonth + "-01"
-         console.log(currentMonthDay)
          let weekStr = ""
          this.setData({
             weekNum: new Date(currentMonthDay).getDay(),
             rowNum: Math.ceil((this.data.yearMonth[this.data.currentMonth-1] + new Date(currentMonthDay).getDay()) / 7)
          })
-         console.log(this.data.yearMonth[this.data.currentMonth-1])
-         console.log(this.data.currentMonth)
-         console.log(new Date(currentMonthDay).getDay() / 7)
          for (let i = 0; i < this.data.rowNum; i++) {
             for (let j = 0; j < 7; j++) {
                this.data.dateArr.push(i * 7 + j)
@@ -75,11 +71,8 @@ Component({
          this.setData({
             dateArr: this.data.dateArr
          })
-         console.log(this.data.dateArr)
-         console.log(this.data.year+"-"+this.data.currentMonth+"-01")
       },
       reduce:function(){
-         console.log("A")
          this.setData({
             dateArr:[]
          })
@@ -107,15 +100,12 @@ Component({
          this.setData({
             dateArr: this.data.dateArr
          })
-         console.log(this.data.year + "-" + this.data.currentMonth+"-01")
       },
       _add:function(){
          this.triggerEvent( "add" )
-         console.log("A")
       },
       _reduce:function(){
          this.triggerEvent( "reduce" )
-         console.log("B")
       }
    }
 })
