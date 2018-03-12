@@ -4,7 +4,8 @@ const request = require('./../../utils/util')
 Page({
    data:{
       countDown:5,
-      countType:1
+      countType:1,
+      loginType:true
    },
    registerTo:function(){
       wx.switchTab({
