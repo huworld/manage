@@ -1,19 +1,16 @@
-const formatTime = date => {
-  const year = date.getFullYear()
-  const month = date.getMonth() + 1
-  const day = date.getDate()
-  const hour = date.getHours()
-  const minute = date.getMinutes()
-  const second = date.getSeconds()
-
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+function request(url, json, callback) {
+   wx.request({
+      url: "https://www.fatime.cn" + url,
+      data: json,
+      method: 'POST',
+      header: {
+         "Content-Type": "application/x-www-form-urlencoded" // 默认值
+      },
+      success: function (res) {
+         callback(res)
+      }
+   })
 }
-
-const formatNumber = n => {
-  n = n.toString()
-  return n[1] ? n : '0' + n
-}
-
 module.exports = {
-  formatTime: formatTime
+   request: request
 }
