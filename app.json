@@ -1,7 +1,6 @@
 {
    "pages": [
       "pages/register/register",
-      "pages/index/index",
       "pages/components/calender/calender",
       "pages/checkOrder/checkIndex/checkIndex",
       "pages/customerManage/customerIndex/customerIndex",
